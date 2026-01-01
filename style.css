@@ -307,53 +307,39 @@ footer{
 /* Mobile */
 @media (max-width: 768px){
 
+  /* Show hamburger */
   .menu-toggle{
     display:block;
   }
 
+  /* Hide links by default */
   .nav-links{
     position:absolute;
     top:60px;
     left:0;
     width:100%;
     background:rgba(0,0,0,0.95);
+    display:none;
     flex-direction:column;
     align-items:center;
-    gap:20px;
-    padding:25px 0;
-    display:none;
+    padding:20px 0;
   }
 
+  /* Show when active */
   .nav-links.active{
     display:flex;
   }
 
-  .glow{ font-size:2.5rem; }
-
-  .section,
-  .section-column{
-    width:95%;
-    margin:60px auto;
-  }
-
-  .section img{ width:220px; }
-
-  .cards{
-    flex-direction:column;
-    align-items:center;
-  }
-
-  .card{ width:90%; }
-
-  .skills-grid{
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  .slide-track img{
-    width:240px;
-    height:160px;
+  /* Mobile link style */
+  .nav-links a{
+    padding:12px 0;
+    font-size:18px;
+    width:100%;
+    text-align:center;
+    border-bottom:1px solid rgba(255,255,255,0.1);
   }
 }
+
 
 /* Small Mobile */
 @media (max-width: 480px){
@@ -368,4 +354,5 @@ footer{
     height:140px;
   }
 }
+
 
